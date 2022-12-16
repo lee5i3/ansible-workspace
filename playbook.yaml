@@ -1,0 +1,7 @@
+- name: Install Tools
+  gather_facts: true
+  hosts: local
+  become: true
+  become_user: root
+  roles:
+    - role: cmprescott.chrome
